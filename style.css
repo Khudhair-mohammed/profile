@@ -531,7 +531,7 @@ font-weight: 600;
 
 
 
-@media (max-width:400px){
+@media (max-width:450px){
     body{
         min-width: 255px;
         font-size: 10px;
