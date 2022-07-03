@@ -532,11 +532,45 @@ font-weight: 600;
 
 
 
-
-
-
-
+/* for the nav bar*/
 @media (max-width:450px){
+.toggle-button {
+    display: flex;
+}
+
+.navigation {
+   display: none;
+   width: 100%;
+}
+
+.logo{
+   break-after: avoid;
+}
+.navbar{
+   flex-direction: column;
+   align-items: flex-start;
+}
+.navigation ul{
+   flex-direction: column;
+   width: 100%;
+
+}
+.navigation li{
+   text-align: center;
+}
+.navigation li a{
+   padding: .35rem;
+}
+.active .navigation{
+ display: flex;
+}
+}
+
+/*navbar*/
+
+
+
+@media (max-width:400px){
     body{
         min-width: 255px;
         font-size: 10px;
@@ -1155,4 +1189,6 @@ margin-bottom: 2em;
     0%,80%,100% {transform:translate(0)}
     90%         {transform:translate(26px)}
   }
+  
+
   
