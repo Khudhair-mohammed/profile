@@ -138,6 +138,7 @@ section{
 }
 
 .Message--submit--btn,.main-btn{
+    
     color: #f0f0f0;
     background-color: #a2b43a;
     text-decoration: none;
@@ -229,7 +230,7 @@ input,textarea{
     transition: 0.2s;
     margin-bottom: 4rem;
     color: #000;    
-   resize: none;
+    resize: none;
 }
 
 label{
@@ -531,41 +532,38 @@ font-weight: 600;
 
 
 
-/* for nav bar and navigation*/
-
+/* for the nav bar*/
 @media (max-width:450px){
-    .toggle-button {
-        display: flex;
-    }
+.toggle-button {
+    display: flex;
+}
 
-    .navigation {
-       display: none;
-       width: 100%;
-    }
- 
-   .logo{
-       break-after: avoid;
-   }
-   .navbar{
-       flex-direction: column;
-       align-items: flex-start;
-   }
-   .navigation ul{
-       flex-direction: column;
-       width: 100%;
-    
-   }
-   .navigation li{
-       text-align: center;
-   }
-   .navigation li a{
-       padding: .35rem;
-   }
-  .active .navigation{
-     display: flex;
- }
- 
- 
+.navigation {
+   display: none;
+   width: 100%;
+}
+
+.logo{
+   break-after: avoid;
+}
+.navbar{
+   flex-direction: column;
+   align-items: flex-start;
+}
+.navigation ul{
+   flex-direction: column;
+   width: 100%;
+
+}
+.navigation li{
+   text-align: center;
+}
+.navigation li a{
+   padding: .35rem;
+}
+.active .navigation{
+ display: flex;
+}
 }
 
 /*navbar*/
@@ -1191,4 +1189,4 @@ margin-bottom: 2em;
     0%,80%,100% {transform:translate(0)}
     90%         {transform:translate(26px)}
   }
-
+  
