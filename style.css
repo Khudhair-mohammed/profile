@@ -138,7 +138,6 @@ section{
 }
 
 .Message--submit--btn,.main-btn{
-    
     color: #f0f0f0;
     background-color: #a2b43a;
     text-decoration: none;
@@ -230,7 +229,7 @@ input,textarea{
     transition: 0.2s;
     margin-bottom: 4rem;
     color: #000;    
-    resize: none;
+   resize: none;
 }
 
 label{
@@ -532,45 +531,7 @@ font-weight: 600;
 
 
 
-/* for the nav bar*/
 @media (max-width:450px){
-.toggle-button {
-    display: flex;
-}
-
-.navigation {
-   display: none;
-   width: 100%;
-}
-
-.logo{
-   break-after: avoid;
-}
-.navbar{
-   flex-direction: column;
-   align-items: flex-start;
-}
-.navigation ul{
-   flex-direction: column;
-   width: 100%;
-
-}
-.navigation li{
-   text-align: center;
-}
-.navigation li a{
-   padding: .35rem;
-}
-.active .navigation{
- display: flex;
-}
-}
-
-/*navbar*/
-
-
-
-@media (max-width:400px){
     body{
         min-width: 255px;
         font-size: 10px;
@@ -1190,5 +1151,188 @@ margin-bottom: 2em;
     90%         {transform:translate(26px)}
   }
   
-
+  
+  .dots-bars-7 {
+    width: 40px;
+    height: 40px;
+    --c: linear-gradient(currentColor 0 0);
+    background: 
+      var(--c) 0    0,
+      var(--c) 0    100%, 
+      var(--c) 50%  0,  
+      var(--c) 50%  100%, 
+      var(--c) 100% 0, 
+      var(--c) 100% 100%;
+    background-size: 8px 50%;
+    background-repeat: no-repeat;
+    animation: db7-0 1s infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  .dots-bars-7:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    top:calc(50% - 4px);
+    left:-8px;
+    animation:inherit;
+    animation-name:db7-1;
+  }
+  
+  @keyframes db7-0 {
+   16.67% {background-size:8px 30%, 8px 30%, 8px 50%, 8px 50%, 8px 50%, 8px 50%}
+   33.33% {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   50%    {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 30%}
+   66.67% {background-size:8px 50%, 8px 50%, 8px 30%, 8px 30%, 8px 30%, 8px 30%}
+   83.33% {background-size:8px 50%, 8px 50%, 8px 50%, 8px 50%, 8px 30%, 8px 30%}
+  }
+  
+  @keyframes db7-1 {
+   20%  {left:0px}
+   40%  {left:calc(50%  - 4px)}
+   60%  {left:calc(100% - 8px)}
+   80%,
+   100% {left:100%}
+  }
+  
+  .dots-bars-8 {
+    width: 40px;
+    height: 40px;
+    --c: linear-gradient(currentColor 0 0);
+    background: 
+      var(--c) 0    0,
+      var(--c) 0    100%, 
+      var(--c) 50%  0,  
+      var(--c) 50%  100%, 
+      var(--c) 100% 0, 
+      var(--c) 100% 100%;
+    background-size: 8px 50%;
+    background-repeat: no-repeat;
+    animation: db8-0 2s infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  .dots-bars-8:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    top:calc(50% - 4px);
+    left:-8px;
+    animation:inherit;
+    animation-name:db8-1;
+  }
+  
+  @keyframes db8-0 {
+   16.67% {background-size:8px 30%, 8px 30%, 8px 50%, 8px 50%, 8px 50%, 8px 50%}
+   33.33% {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   50%    {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   66.67% {background-size:8px 50%, 8px 50%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   83.33% {background-size:8px 50%, 8px 50%, 8px 50%, 8px 50%, 8px 50%, 8px 50%}
+  }
+  
+  @keyframes db8-1 {
+   20%      {left:0px}
+   40%,100% {left:calc(50% - 4px)}
+  }
+  
+  .dots-bars-9 {
+    width: 40px;
+    height: 40px;
+    --c: linear-gradient(currentColor 0 0);
+    background: 
+      var(--c) 0    0,
+      var(--c) 0    100%, 
+      var(--c) 50%  0,  
+      var(--c) 50%  100%, 
+      var(--c) 100% 0, 
+      var(--c) 100% 100%;
+    background-size: 8px 50%;
+    background-repeat: no-repeat;
+    animation: db9-0 2s infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  .dots-bars-9:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    top:calc(50% - 4px);
+    left:-8px;
+    animation:inherit;
+    animation-name:db9-1;
+  }
+  
+  @keyframes db9-0 {
+   16.67% {background-size:8px 30%, 8px 30%, 8px 50%, 8px 50%, 8px 50%, 8px 50%}
+   33.33% {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   50%    {background-size:8px 30%, 8px 30%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   66.67% {background-size:8px 50%, 8px 50%, 8px 30%, 8px 30%, 8px 50%, 8px 50%}
+   83.33% {background-size:8px 50%, 8px 50%, 8px 50%, 8px 50%, 8px 50%, 8px 50%}
+  }
+  
+  @keyframes db9-1 {
+   20%     {left:0px}
+   40%,70% {left:calc(50% - 4px)}
+   80%,85% {left:8px;top:calc(50% - 4px)}
+   100%    {left:8px;top:-8px}
+  }
+  
+  
+  .dots-bars-10 {
+    width: 70px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+  }
+  .dots-bars-10::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    inset:0;
+    margin:auto; 
+    background: currentColor;
+    transform-origin: bottom;
+    animation: db10-1 3s infinite;
+  }
+  .dots-bars-10::after {
+    content: "";
+    position: absolute;
+    width:8px;
+    height:14px;
+    bottom:calc(50% - 4px);
+    background: currentColor;
+    animation: db10-2 3s infinite;
+  }
+  
+  @keyframes db10-1 {
+   0%,
+   10% {transform:translate(0)     scale(1)  ;box-shadow: 60px 0 ,60px 0}
+   20%,
+   40% {transform:translate(20px)  scale(1)  ;box-shadow: 60px 0 ,60px 0}
+   48% {transform:translate(20px)  scale(1)  ;box-shadow: 8px  0 ,60px 0}
+   50% {transform:translate(20px)  scale(1.5);box-shadow: 0    0 ,60px 0}
+   58% {transform:translate(20px)  scale(1.5);box-shadow: 0    0 ,8px  0}
+   60%,
+   70% {transform:translate(20px)  scale(2)  ;box-shadow: 0    0 ,0    0}
+  
+   85% {transform:translate(-50px) scale(2)  ;box-shadow: 0    0 ,0    0}
+   87% {transform:translate(-50px) scale(1)  ;box-shadow: 0    0 ,0    0}
+   100%{transform:translate(0)     scale(1)  ;box-shadow: 0    0 ,0    0}
+  }
+  
+  @keyframes db10-2 {
+   20%,70% {left:50%}
+   0%,10%,85%,100% {left:-25px}
+  }
   
